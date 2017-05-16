@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'HelloWord_Example' do
+  pod 'HelloWord', :path => '../'
+
+  target 'HelloWord_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+  end
+end
